@@ -1,16 +1,121 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    h2 {
+      color: #3b99e0;
+    }
+    .summary {
+      border-top: 3px solid #5ea4f3;
+      background-color: #f7fbff;
+    }
+    .product-title {
+      font-weight: bold;
+      color: #3b99e0;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<div class="container my-5">
+  <div class="text-center mb-4">
+    <h2>Shopping cart</h2>
+    <p class="text-muted">
+      The customer is very important, the customer will be followed by the customer. Now, as an urn, I have no right to be in possession of property.
+    </p>
+  </div>
+
+  <div class="row">
+    <!-- Left: Products -->
+    <div class="col-lg-8">
+      <!-- Product 1 -->
+      <div class="row mb-3 align-items-center">
+        <div class="col-3">
+          <img src="https://images.unsplash.com/photo-1695048133021-be2def43f3b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM3fHxtb2JpbGV8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Product Image">
+        </div>
+        <div class="col-5">
+          <div class="product-title">I am very sorry</div>
+          <div>Display: 5 inches</div>
+          <div>RAM: 4GB</div>
+          <div>Memory: 32GB</div>
+        </div>
+        <div class="col-2">
+          Quantity:
+          <input type="number" class="form-control" value="0">
+        </div>
+        <div class="col-2 text-end">
+          <div>$120</div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="row mb-3 align-items-center">
+        <div class="col-3">
+          <img src="https://images.unsplash.com/photo-1695048133021-be2def43f3b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM3fHxtb2JpbGV8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Product Image">
+        </div>
+        <div class="col-5">
+          <div class="product-title">I am very sorry</div>
+          <div>Display: 5 inches</div>
+          <div>RAM: 4GB</div>
+          <div>Memory: 32GB</div>
+        </div>
+        <div class="col-2">
+          Quantity:
+          <input type="number" class="form-control" value="1">
+        </div>
+        <div class="col-2 text-end">
+          <div>$120</div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="row mb-3 align-items-center">
+        <div class="col-3">
+          <img src="https://images.unsplash.com/photo-1695048133021-be2def43f3b2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM3fHxtb2JpbGV8ZW58MHx8MHx8fDA%3D" class="img-fluid" alt="Product Image">
+        </div>
+        <div class="col-5">
+          <div class="product-title">I am very sorry</div>
+          <div>Display: 5 inches</div>
+          <div>RAM: 4GB</div>
+          <div>Memory: 32GB</div>
+        </div>
+        <div class="col-2">
+          Quantity:
+          <input type="number" class="form-control" value="1">
+        </div>
+        <div class="col-2 text-end">
+          <div>$120</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Summary -->
+    <div class="col-lg-4">
+      <div class="p-3 shadow summary">
+        <h5 class="text-center mb-4">Summary</h5>
+        <div class="d-flex justify-content-between">
+          <span>Subtotal</span><span>$360</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>Discount</span><span>$0</span>
+        </div>
+        <div class="d-flex justify-content-between">
+          <span>Shipping</span><span>$0</span>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between fw-bold">
+          <span>Total</span><span>$360</span>
+        </div>
+        <div class="d-grid mt-4">
+          <button class="btn btn-primary">checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
-
 </html>
